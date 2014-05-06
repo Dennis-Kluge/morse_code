@@ -22,6 +22,11 @@ describe MorseCode::Converter do
     morse_code.convert.must_equal "HELLOWORLD"
   end
 
+  it "converts a valid multi line morse code to a readable text" do 
+    morse_code = MorseCode::Converter.new(".- .- .- \n ----- ----- --... \n ----- ----- --...")
+    morse_code.convert.must_equal "AAA\n007\n007\n"
+  end
+
   it "does not converts a valid morse code to a readable text" do 
     morse_code = MorseCode::Converter.new("foobar")
     morse_code.convert.must_equal ""
