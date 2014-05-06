@@ -1,5 +1,2 @@
 require "morse_code/version"
-
-module MorseCode
-  # Your code goes here...
-end
+require "morse_code/constants"
