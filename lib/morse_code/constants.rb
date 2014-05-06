@@ -1,4 +1,5 @@
-module MorseCode::Constants
+module MorseCode::Constants  
+
   ALPHABET = {
     ".-"   => "A",
     "-..." => "B",
@@ -28,6 +29,21 @@ module MorseCode::Constants
     "--.." => "Z"
   }
 
+  NUMBERS = {
+    "-----" => "0", 
+    ".----" => "1", 
+    "..---" => "2", 
+    "...--" => "3", 
+    "....-" => "4", 
+    "....." => "5", 
+    "-...." => "6", 
+    "--..." => "7", 
+    "---.." => "8", 
+    "----." => "9"
+  }
+
+  FULL_CODE = ALPHABET.merge(NUMBERS)
+
   LATIN_ALPHABET = {
     "A" => ".-", 
     "B" => "-...", 
@@ -56,4 +72,19 @@ module MorseCode::Constants
     "Y" => "-.--", 
     "Z" => "--.."
   }
+
+  ARABIC_NUMBERS = {
+    "0" => "-----",
+    "1" => ".----",
+    "2" => "..---", 
+    "3" => "...--", 
+    "4" => "....-", 
+    "5" => ".....", 
+    "6" => "-....", 
+    "7" => "--...", 
+    "8" => "---..", 
+    "9" => "----."
+  }
+
+  FULL_ALPHA_NUMERIC_CODE = LATIN_ALPHABET.merge(ARABIC_NUMBERS)
 end
