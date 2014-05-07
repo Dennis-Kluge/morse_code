@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = MorseCode::VERSION
   spec.authors       = ["Horst Mumpitz"]
   spec.email         = ["denniskluge@me.com"]
-  spec.description   = %q{Write a gem description}
-  spec.summary       = %q{Write a gem summary}
+  spec.description   = %q{A small Library which converst morse codes back and forth}
+  spec.summary       = %q{A small Library which converst morse codes back and forth}
   spec.homepage      = ""
   spec.license       = "MIT"
 
