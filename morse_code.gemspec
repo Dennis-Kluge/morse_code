@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["denniskluge@me.com"]
   spec.description   = %q{A small Library which converst morse codes back and forth}
   spec.summary       = %q{A small Library which converst morse codes back and forth}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/HorstMumpitz/morse_code"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
